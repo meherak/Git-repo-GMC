@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Achat</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <header>
+      <!-- icon and text -->
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#montainbikes">
+          <i class="fas fa-bicycle"></i>
+          Montain E-Bikes
+        </a>
+      </nav>
+    </header>
+    <main>
+      <!-- carousel -->
+      <section class="carousel">
+        <div
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets/pexels-kaboompics-com-5882.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/pexels-jenda-kubeš-8724651.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/pexels-jenda-kubeš-6567289.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- section E-BIKES -->
+      <section id="montainbikes">
+        <!-- total articles -->
+        <h1>TOTAL IS: <span id="total">0</span>,00 €</h1>
+        <!-- carde sales -->
+        <div class="card mb-3 card">
+          <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img
+            class="card-img-top"
+            src="./assets/pexels-jenda-kubeš-8755526.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <button class="btn btn-outline-dark like" style="color: black">
+              <i class="far fa-thumbs-up" onclick="likecolorfn(this)"> 356</i>
+            </button>
+            <h5 class="card-title">HYBRIDE ASX ESSENTIAL 160</h5>
+            <h6 class="card-price">4699,00 €</h6>
+            <span class="colorIcon" style="border-bottom-color: #473b2f"></span>
+            <p class="card-color">DARKCHOCO</p>
+            <p class="card-text">
+              <small class="total-article"></small>
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button type="button" class="btn btn-outline-dark btnd">-</button>
+              <input type="number" placeholder="1" class="qte" min="1" />
+              <button type="button" class="btn btn-outline-dark btni">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img
+            class="card-img-top"
+            src="./assets/pexels-jenda-kubeš-8755529.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <button class="btn btn-outline-dark like" style="color: black">
+              <i class="far fa-thumbs-up" onclick="likecolorfn(this)"> 210</i>
+            </button>
+            <h5 class="card-title">MONDRAKER CRAFTY R</h5>
+            <h6 class="card-price">3799,00 €</h6>
+            <span class="colorIcon" style="border-bottom-color: orange"></span>
+            <p class="card-color">BLACK/ORANGE</p>
+            <p class="card-text">
+              <small class="total-article"></small>
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button type="button" class="btn btn-outline-dark btnd">-</button>
+              <input type="number" placeholder="1" class="qte" min="1" />
+              <button type="button" class="btn btn-outline-dark btni">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <img
+            class="card-img-top"
+            src="./assets/pexels-jenda-kubeš-8755530.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <button class="btn btn-outline-dark like" style="color: black">
+              <i class="far fa-thumbs-up" onclick="likecolorfn(this)"> 501</i>
+            </button>
+            <h5 class="card-title">2021 QURUK BOSCH CX 625</h5>
+            <h6 class="card-price">4276,00 €</h6>
+            <span class="colorIcon" style="border-bottom-color: #658bb8"></span>
+            <p class="card-color">BLUE</p>
+            <p class="card-text">
+              <small class="total-article"></small>
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button type="button" class="btn btn-outline-dark btnd">-</button>
+              <input type="number" placeholder="1" class="qte" min="1" />
+              <button type="button" class="btn btn-outline-dark btni">+</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer part -->
+      <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://www.facebook.com/"
+              role="button"
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+
+            <!-- Twitter -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://www.twitter.com"
+              role="button"
+              target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+
+            <!-- Google -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://www.google.com"
+              role="button"
+              target="_blank"
+              ><i class="fab fa-google"></i
+            ></a>
+
+            <!-- Instagram -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://www.instagram.com"
+              role="button"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+
+            <!-- Linkedin -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://www.Linkedin.com"
+              role="button"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+
+            <!-- Github -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://www.Github.com"
+              role="button"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          © 2020 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/"
+            >Montainebikes.com</a
+          >
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

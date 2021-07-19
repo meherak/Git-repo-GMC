@@ -1,0 +1,77 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card-title,
+.card-price,
+.card-color,
+h1 {
+  color: #042c35;
+}
+#montainbikes {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.qte {
+  text-align: center;
+  padding-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: large;
+}
+
+h1 {
+  display: flex;
+  justify-content: left;
+}
+.carousel {
+  margin-left: 9%;
+  margin-right: 9%;
+}
+
+.colorIcon {
+  border-style: solid;
+  border-left-width: 12px;
+  border-right-width: 12px;
+  border-bottom-width: 20px;
+  border-top-width: 0;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  display: block;
+  margin-left: -12px;
+  width: 0;
+  float: left;
+}
+.colorIcon {
+  position: relative;
+}
+.far {
+  color: grey;
+}
+.navbar-brand {
+  color: #eaf1f3 !important;
+}
+.navbar {
+  background-color: #042c35 !important;
+}
+
+.mb-3 {
+  background-color: #eaf1f3 !important;
+}
+footer {
+  background-color: #54436b !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+.qte {
+  width: 50px;
+}
